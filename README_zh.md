@@ -2,6 +2,8 @@
 
 根据自定义规则，替换模块引入路径。
 
+[English](https://www.npmjs.com/package/babel-plugin-import-replacement)
+
 ## 安装
 
 ```sh

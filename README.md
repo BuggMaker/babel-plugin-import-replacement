@@ -2,6 +2,8 @@
 
 Replace import path by customize rules.
 
+[中文](https://github.com/BuggMaker/babel-plugin-import-replacement/blob/master/README_zh.md#babel-plugin-import-replacement)
+
 ## Installation
 
 ```sh
