@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-import-replacement",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.1",
   "description": "replace import path by customize rules",
   "main": "index.js",
   "scripts": {
