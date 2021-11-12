@@ -1,16 +1,16 @@
 # babel-plugin-import-replacement
 
-Replace import path by customize rules.
+根据自定义规则，替换模块引入路径。
 
-## Installation
+## 安装
 
 ```sh
 npm install babel-plugin-import-replacement --save-dev
 ```
 
-## Example
+## 示例
 
-### js file
+### js 文件
 
 ```js
 import React from 'react';
@@ -21,7 +21,7 @@ import 'module-name3';
 import utils from ' my-utils';
 ```
 
-### babel.config.js
+### babel 配置 babel.config.js
 
 ```js
 module.exports = {
@@ -55,7 +55,7 @@ module.exports = {
 };
 ```
 
-### Transformed Code
+### 转换后的代码
 
 ```js
 "use strict";
@@ -79,22 +79,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 `array`
 
-Rules for defining the replacement of import paths, which can be multiple.
+定义引入路径的替换的规则，可以是多个。
 
 #### match
 
-- `string`
-- `RegExp`
+- 字符串 `string`
+- 正则表达式 `RegExp`
 
 #### replacement
 
-- `string`
-- `(source:string) => string`
-  - source: matching import path
-  - return: replaced path
+- 字符串 `string`
+- 函数 `(source:string) => string`
+  - 如参为匹配到的路径，返回值为替换后的路径
 
 ### debug
 
 `boolean`
 
-Defines whether to enable debug mode. When enabled, the console will print the matching import path and the replacement path. The default value is `false`. `
+定义是否开启调试模式，开启后会在控制台打印匹配的引入路径以及替换后的路径，默认值 `false。`
